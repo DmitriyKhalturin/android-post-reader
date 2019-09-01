@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#008577</color>
+  <color name="colorPrimaryDark">#00574B</color>
+  <color name="colorAccent">#D81B60</color>
+
+  <color name="commentBackground">#E0E0E0</color>
+  <color name="commentName">#000000</color>
+  <color name="commentEmail">#1E8BE9</color>
+
+  <color name="textDefault">#5A5A5A</color>
+</resources>

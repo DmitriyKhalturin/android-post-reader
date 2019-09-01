@@ -1,0 +1,78 @@
+apply plugin: "com.android.application"
+apply plugin: "kotlin-android"
+apply plugin: "kotlin-android-extensions"
+apply plugin: "kotlin-kapt"
+
+android {
+  compileSdkVersion android_target_sdk_version
+  buildToolsVersion "$android_build_tools_version"
+
+  defaultConfig {
+    applicationId "com.reader.post"
+
+    minSdkVersion android_min_sdk_version
+    targetSdkVersion android_target_sdk_version
+
+    versionCode android_version_code
+    versionName "$android_version_name"
+
+    testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+  }
+
+  dataBinding {
+    enabled = true
+  }
+
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+    }
+  }
+
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+  }
+}
+
+dependencies {
+  testImplementation "junit:junit:4.12"
+  androidTestImplementation "androidx.test:runner:1.2.0"
+  androidTestImplementation "androidx.test.espresso:espresso-core:3.2.0"
+
+  implementation fileTree(dir: "libs", include: ["*.jar"])
+
+  implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+  implementation "androidx.appcompat:appcompat:$support_library_version"
+  implementation "androidx.legacy:legacy-support-v4:$support_library_version"
+  implementation "com.google.android.material:material:$support_library_version"
+  implementation "androidx.core:core-ktx:$support_library_version"
+  implementation "androidx.constraintlayout:constraintlayout:$constraint_layout_version"
+
+  implementation "io.reactivex.rxjava2:rxandroid:$rx_android_version"
+  implementation "io.reactivex.rxjava2:rxjava:$rx_java_version"
+
+  implementation "com.google.dagger:dagger:$dagger_version"
+  kapt "com.google.dagger:dagger-compiler:$dagger_version"
+
+  implementation "androidx.lifecycle:lifecycle-extensions:$arch_lifecycle_version"
+  implementation "androidx.lifecycle:lifecycle-reactivestreams:$arch_lifecycle_version"
+  implementation "androidx.lifecycle:lifecycle-common-java8:$arch_lifecycle_version"
+  kapt "androidx.lifecycle:lifecycle-compiler:$arch_lifecycle_version"
+
+  api "androidx.room:room-runtime:$arch_persistent_room_version"
+  kapt "androidx.room:room-compiler:$arch_persistent_room_version"
+  api "androidx.room:room-rxjava2:$arch_persistent_room_version"
+
+  implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+  implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version"
+  implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+  implementation "com.squareup.retrofit2:converter-moshi:$retrofit_version"
+
+  implementation "com.squareup.okhttp3:okhttp:$okhttp_version"
+  implementation "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
+
+  implementation "com.google.code.gson:gson:$gson_version"
+}
