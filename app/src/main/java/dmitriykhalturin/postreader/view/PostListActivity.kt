@@ -4,8 +4,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProviders
-import com.reader.post.R
-import com.reader.post.databinding.ActivityPostListBinding
+import dmitriykhalturin.postreader.R
+import dmitriykhalturin.postreader.databinding.ActivityPostListBinding
 import dmitriykhalturin.postreader.viewmodel.PostListViewModel
 
 /**

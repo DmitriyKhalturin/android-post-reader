@@ -5,8 +5,8 @@ import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProviders
-import com.reader.post.R
-import com.reader.post.databinding.ActivityPostDetailBinding
+import dmitriykhalturin.postreader.R
+import dmitriykhalturin.postreader.databinding.ActivityPostDetailBinding
 import dmitriykhalturin.postreader.viewmodel.PostDetailViewModel
 
 /**

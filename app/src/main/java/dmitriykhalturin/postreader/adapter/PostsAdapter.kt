@@ -2,7 +2,7 @@ package dmitriykhalturin.postreader.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import com.reader.post.R
+import dmitriykhalturin.postreader.R
 import dmitriykhalturin.postreader.model.Post
 
 /**
