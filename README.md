@@ -1,6 +1,6 @@
 ### Post Reader (test application)
 
-Implementation MVVM pattern with Android DataBinding Library for binding XML View with ViewModel
+Implementation MVVM pattern with Android DataBinding Library for binding XML View with ViewModel.
 
 How Api Service use fake Api [http://jsonplaceholder.typicode.com].
 
