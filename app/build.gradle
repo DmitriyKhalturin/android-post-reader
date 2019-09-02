@@ -8,8 +8,6 @@ android {
   buildToolsVersion "$android_build_tools_version"
 
   defaultConfig {
-    applicationId "com.reader.post"
-
     minSdkVersion android_min_sdk_version
     targetSdkVersion android_target_sdk_version
 
